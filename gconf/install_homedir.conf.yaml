@@ -15,3 +15,6 @@
         ~/.bash_profile: bash_profile
         ~/.bashrc: bashrc
         ~/.inputrc: inputrc
+        ~/.p10k.zsh: p10k.zsh
+
+# EOF
