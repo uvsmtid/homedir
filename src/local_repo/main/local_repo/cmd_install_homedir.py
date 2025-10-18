@@ -17,7 +17,7 @@ def install_homedir(
     config_abs_path = os.path.join(
         ref_root_dir_abs_path,
         "gconf",
-        "install.conf.yaml",
+        "install_homedir.conf.yaml",
     )
 
     sys.argv.extend(

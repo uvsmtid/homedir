@@ -19,9 +19,12 @@ Install [homedir][homedir_link] files via [dotbot][dotbot_repo]:
 ./cmd/install_homedir
 ```
 
+See [install_homedir.conf.yaml][install_homedir_conf] for details.
+
 ---
 
 [protoprimer_repo]: https://github.com/uvsmtid/protoprimer
 [dotbot_repo]: https://github.com/anishathalye/dotbot
 
 [homedir_link]: homedir
+[install_homedir_conf]: gconf/install_homedir.conf.yaml
