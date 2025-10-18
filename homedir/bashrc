@@ -1,35 +1,26 @@
 # .bashrc
 
-# Source global definitions
+# Source global definitions:
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# User specific environment
+# User specific environment:
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
 # User specific aliases and functions
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/uvsmtid/.sdkman"
-[[ -s "/home/uvsmtid/.sdkman/bin/sdkman-init.sh" ]] && source "/home/uvsmtid/.sdkman/bin/sdkman-init.sh"
-
 # Test `argrelay` config:
-cd /home/uvsmtid/Works/argrelay.git/
-source /home/uvsmtid/Works/argrelay.git/exe/shell_env.bash
+cd /home/uvsmtid/repos/argrelay.git/
+source /home/uvsmtid/repos/argrelay.git/exe/shell_env.bash
 cd - 1> /dev/null
 
-# TODO: delete - this is temporaily for `asciinema` recording:
-#export PS1="\[\e[90m\]argrelay.git:\[\e[0m\] "
+source ~/repos/argrelay.git/exe/shell_env.bash
 
-source ~/Works/argrelay.git/exe/shell_env.bash
-
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
