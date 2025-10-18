@@ -1,28 +1,27 @@
 
 # `homdir`
 
-A repo with `$HOME` dir user files (dotfiles and such).
+A repo with `$HOME` dir user files (dotfiles and such):
+*   privately used but publicly shared for copying-and-pasting
+*   not supposed to contain secret (keys, passwords, etc.)
 
-They are privately used but publicly shared to reuse snippets.
+## Usage
 
-They are not supposed to contain secret (keys, passwords, etc.).
+Bootstrap the repo via [protoprimer][protoprimer_repo]:
 
-## init
-
-Bootstrap the repo:
-
-```
+```sh
 ./prime
 ```
 
-Install `dotdrop`:
+Install [homedir][homedir_link] files via [dotbot][dotbot_repo]:
 
 ```sh
-pipx install dotdrop
+./cmd/install_homedir
 ```
 
-Add files:
+---
 
-```sh
-dotdrop import ~/.gitconfig
-```
+[protoprimer_repo]: https://github.com/uvsmtid/protoprimer
+[dotbot_repo]: https://github.com/anishathalye/dotbot
+
+[homedir_link]: homedir
