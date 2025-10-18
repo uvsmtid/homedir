@@ -1,0 +1,93 @@
+# Custom Git configuration
+
+[core]
+
+    editor = vim
+
+    sparseCheckout = true
+
+[include]
+    path = .gitconfig.author
+
+[color]
+
+    ui = auto
+
+[diff]
+
+    # Increase diff context (default: 3)
+    # Generally, bigger context helps more often.
+    context = 15
+
+[alias]
+
+    # Use `histogram` diff algorithm for all `log` commands.
+    # Tests showed that the difference tends to be minimal.
+
+    # Provide `--stat` with width parameter (to avoid path truncating).
+
+    # "Graph log"
+    # Draw a history graph with full decoration and detailed info.
+    glog = log --histogram --decorate=full --pretty=fuller --graph --stat=1024
+
+    # "File log"
+    # In addition to `glog` follow file's history beyond renames.
+    # Option `-m` shows merge commits as well.
+    flog = log --histogram --decorate=full --pretty=fuller --graph --stat=1024 --follow -m
+
+    # "Long log" - one line commit with graph.
+    # Useful for high level log overview long back in history.
+    llog = log --histogram --decorate=full --graph --pretty=oneline --abbrev-commit --format='%C(auto)%h%d %s %Cgreen%an %Cblue%ad'
+
+    ll = llog --max-count=20
+
+    # "Branch log" - two line commit with graph of all references.
+    # It is used for overview of branching - orphans are visually seen
+    # due to the second line which always forces to draw graph connectors.
+    #
+    blog = log --histogram --all --decorate=full --graph --abbrev-commit --format='%C(auto)%h%d %s\n        %Cgreen%an %Cblue%ad'
+
+    # "All log"
+    # Displays any unreferenced commits (anything found in `reflog`) with
+    # format similar to the "branch log".
+    # Credit: https://gist.github.com/matthewmccullough/988077
+    # NOTE: Exclamation point (`!`) is used to use shell expansion
+    #       for the command.
+    alog = !git log --histogram --decorate=full --graph --abbrev-commit --format='%C(auto)%h%d %s\n        %Cgreen%an %Cblue%ad' `git reflog --all | cut -d' ' -f 1`
+
+    # Merge using fast-forward only
+    ffmerge = merge --ff-only
+
+    # Merge two branches into one (avoid fast-forward), allow review
+    bbmerge = merge --no-ff --no-commit
+
+    # Pull merging using fast-forward only
+    ffpull = pull --ff-only
+
+    # Pull mergint two branches into one (avoid fast-forward), allow review
+    bbpull = pull --no-ff --no-commit
+
+    # Show diff of local changes
+    ldiff = diff --diff-algorithm=histogram
+
+    # Show diff of staged changes
+    sdiff = diff --diff-algorithm=histogram --staged
+
+[push]
+
+    # When no refspec is given, push only current branch only if
+    # upstream branch's name is the same as local one.
+    default = simple
+
+[core]
+    # Do not wrap long lines.
+    pager = less --chop-long-lines
+
+[credential]
+    # 4 weeks:
+    helper = cache --timeout=2419200
+
+###############################################################################
+# EOF
+###############################################################################
+
