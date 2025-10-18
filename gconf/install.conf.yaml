@@ -12,3 +12,5 @@
         ~/.gitconfig: gitconfig
         ~/.gitconfig.author: gitconfig.author
         ~/.zshrc: zshrc
+        ~/.bash_profile: bash_profile
+        ~/.bashrc: bashrc
