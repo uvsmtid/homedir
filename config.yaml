@@ -11,6 +11,7 @@ dotfiles:
     f_gitconfig:
         src: gitconfig
         dst: ~/.gitconfig
+        link: absolute
 profiles:
     thinkpad-l14-g1:
         dotfiles:
