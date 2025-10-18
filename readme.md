@@ -1,5 +1,19 @@
 
-## How was this repo inited?
+# `homdir`
+
+A repo with `$HOME` dir user files (dotfiles and such).
+
+They are privately used but publicly shared to reuse snippets.
+
+They are not supposed to contain secret (keys, passwords, etc.).
+
+## init
+
+Bootstrap the repo:
+
+```
+./prime
+```
 
 Install `dotdrop`:
 
@@ -7,24 +21,8 @@ Install `dotdrop`:
 pipx install dotdrop
 ```
 
-Configure `dotdrop`:
-
-```sh
-dotdrop gencfg > config.yaml
-```
-
 Add files:
 
 ```sh
 dotdrop import ~/.gitconfig
 ```
-
-Install `protoprimer`:
-
-```sh
-git fetch https://github.com/uvsmtid/protoprimer.git
-git show FETCH_HEAD:cmd/proto_code/proto_kernel.py > cmd/proto_code/proto_kernel.py
-```
-
-
-
