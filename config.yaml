@@ -2,7 +2,10 @@ config:
     backup: true
     banner: true
     create: true
-    dotpath: dotfiles
+
+    # rel path to user files:
+    dotpath: homedir
+
     keepdot: false
     link_dotfile_default: nolink
     link_on_import: nolink
