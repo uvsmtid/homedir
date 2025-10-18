@@ -1,0 +1,30 @@
+[build-system]
+
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local_test"
+version = "0.0.0"
+
+classifiers = [
+    # This package is local and is never published:
+    "Private :: Do Not Upload",
+]
+
+# FT_84_11_73_28: supported python versions:
+requires-python = ">=3.8"
+
+dependencies = [
+    "pytest",
+    "pre-commit",
+    "dotbot",
+    "protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@26028d51440067b6f13233c3bdd97e5e81791da4#egg=protoprimer&subdirectory=src/protoprimer",
+    "neoprimer @ git+https://github.com/uvsmtid/protoprimer.git@26028d51440067b6f13233c3bdd97e5e81791da4#egg=neoprimer&subdirectory=src/neoprimer",
+]
+
+[tool.setuptools.packages.find]
+where = ["./main"]
+
+[tool.setuptools.package-dir]
+local_test = "./main/local_test"

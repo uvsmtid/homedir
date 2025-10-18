@@ -1,0 +1,15 @@
+
+# IDEA / PyCharm files:
+/.idea/
+
+# local config symlink used by `protoprimer`:
+/lconf
+
+# temporary files from `python`:
+__pycache__/
+/src/local_repo/main/local_test.egg-info/
+
+# Configured in `protoprimer`:
+/venv/
+/log/
+/tmp/

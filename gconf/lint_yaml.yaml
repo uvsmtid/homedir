@@ -1,0 +1,48 @@
+# Config file for `yamllint`.
+
+---
+
+yaml-files:
+    -   "*.yaml"
+    -   "*.yml"
+
+ignore:
+    # Any files from installed Python packages:
+    -   .venv/
+
+rules:
+    anchors: enable
+    braces: enable
+    brackets: enable
+    colons: enable
+    commas: enable
+    comments:
+        level: warning
+    comments-indentation:
+        level: warning
+    document-end: disable
+    document-start:
+        level: warning
+    empty-lines:
+        max: 2
+        max-start: 1
+        max-end: 2
+    empty-values: disable
+    float-values: disable
+    hyphens:
+        # Force standard indent (i.e. 2) between items of the list item and list item value.
+        max-spaces-after: 3
+    indentation:
+        spaces: 4
+        indent-sequences: true
+        check-multi-line-strings: false
+    key-duplicates: enable
+    key-ordering: disable
+    line-length: disable
+    new-line-at-end-of-file: enable
+    new-lines: enable
+    octal-values: disable
+    quoted-strings: disable
+    trailing-spaces: enable
+    truthy:
+        level: warning
