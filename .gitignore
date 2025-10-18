@@ -12,3 +12,4 @@ __pycache__/
 # Configured in `protoprimer`:
 /venv/
 /log/
+/tmp/
