@@ -1,5 +1,6 @@
 cfgv==3.4.0
 distlib==0.4.0
+dotbot==1.23.1
 filelock==3.20.0
 identify==2.6.15
 iniconfig==2.1.0

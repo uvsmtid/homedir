@@ -1,0 +1,31 @@
+
+---
+
+config:
+    backup: true
+    banner: false
+    create: true
+    dotpath: homedir
+    keepdot: false
+    link_dotfile_default: absolute
+    link_on_import: absolute
+    longkey: true
+dotfiles:
+    f_gitconfig:
+        src: gitconfig
+        dst: ~/.gitconfig
+        link: absolute
+    f_gitconfig.author:
+        src: gitconfig.author
+        dst: ~/.gitconfig.author
+        chmod: '664'
+    f_zshrc:
+        src: zshrc
+        dst: ~/.zshrc
+        chmod: '664'
+profiles:
+    thinkpad-l14-g1:
+        dotfiles:
+            -   f_gitconfig
+            -   f_gitconfig.author
+            -   f_zshrc
