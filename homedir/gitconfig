@@ -6,8 +6,9 @@
 
     sparseCheckout = true
 
-[include]
-    path = .gitconfig.author
+[user]
+	email = uvsmtid@gmail.com
+	name = Alexey Pakseykin
 
 [color]
 
@@ -90,4 +91,3 @@
 ###############################################################################
 # EOF
 ###############################################################################
-
