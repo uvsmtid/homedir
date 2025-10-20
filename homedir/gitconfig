@@ -28,6 +28,9 @@
     # list branches:
     bl = branch
 
+    # amend commit date:
+    amd = commit --amend --date=now
+
     # Use `histogram` diff algorithm for all `log` commands.
     # Tests showed that the difference tends to be minimal.
 
