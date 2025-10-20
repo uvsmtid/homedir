@@ -91,7 +91,7 @@
 
 [core]
     # Do not wrap long lines.
-    pager = less --chop-long-lines
+    pager = less --chop-long-lines --quit-if-one-screen
 
 [credential]
     # 4 weeks:
