@@ -123,3 +123,21 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # Set key bindings for `Home` and `End` keys:
 bindkey '^[[1~' beginning-of-line
 bindkey '^[[4~' end-of-line
+
+# Function to show full path of specified sub-path (or current directory).
+lll () {
+    for ITEM in "$@"
+    do
+        FULL_PATH=$(realpath "$ITEM")
+        ls --color=auto -ld "$FULL_PATH"
+    done
+}
+
+# Function to show full path as `lll` + ssh destination.
+llll () {
+    for ITEM in "$@"
+    do
+        FULL_PATH=$(realpath "$ITEM")
+        echo "$(whoami)@$(hostname):$(ls --color=auto -d "$FULL_PATH")"
+    done
+}
