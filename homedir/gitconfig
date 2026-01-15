@@ -26,7 +26,7 @@
     rl = reflog --date=iso
 
     # list branches:
-    bl = branch
+    bl = for-each-ref --sort='committerdate' --format='%(committerdate:short) %(refname:short)' refs/heads
 
     # amend commit date:
     amd = commit --amend --date=now
