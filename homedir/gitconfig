@@ -25,8 +25,11 @@
     # reflog with timestamps of actions:
     rl = reflog --date=iso
 
-    # list branches:
+    # list branches (sorted by the date of commit):
     bl = for-each-ref --sort='committerdate' --format='%(committerdate:short) %(refname:short)' refs/heads
+
+    # list tags (sorted by the date of commit):
+    tl = for-each-ref --sort='committerdate' --format='%(committerdate:short) %(refname:short)' refs/tags
 
     # amend commit date:
     amd = commit --amend --date=now
