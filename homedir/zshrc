@@ -141,3 +141,5 @@ llll () {
         echo "$(whoami)@$(hostname):$(ls --color=auto -d "$FULL_PATH")"
     done
 }
+
+source /usr/share/fzf/shell/key-bindings.zsh
