@@ -1,7 +1,7 @@
 import os
 from contextlib import contextmanager
 
-import protoprimer
+import local_repo
 
 
 @contextmanager
@@ -12,14 +12,14 @@ def change_to_known_repo_path(path_from_repo_root="."):
     This allows any other code accessing files by relative paths to rely on the stable path within the repo.
     """
 
-    start_dir_abs_path = os.path.dirname(protoprimer.__file__)
+    start_dir_abs_path = os.path.dirname(local_repo.__file__)
     curr_dir_abs_path = start_dir_abs_path
     os.chdir(curr_dir_abs_path)
 
     try:
-        signature_dir_path = os.path.join(".github", "workflows")
+        signature_dir_path = os.path.join("homedir")
         # This will work for anything running with the current dir under repo root dir.
-        # We know that path `signature_dir_path` (can be anything) is a dir relative to repo root dir.
+        # We know that the path `signature_dir_path` (can be anything) is a dir relative to repo root dir.
         # Walk up from `start_dir_abs_path` until we see `signature_dir_path` - if we see it, we are in repo root dir.
 
         while not os.path.isdir(os.path.join(os.getcwd(), signature_dir_path)):
