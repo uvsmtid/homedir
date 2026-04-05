@@ -8,3 +8,17 @@ To upgrade `protoprimer` to the latest version, check these lines in `pyproject.
 
 Update commit id to the latest from `main`:
 https://github.com/uvsmtid/protoprimer/
+
+Remove `constraints.txt` file (because it would point to the old commit id):
+
+```sh
+rm lconf/constraints.txt
+```
+
+Run:
+
+```sh
+./prime
+```
+
+It may fail as `protoprimer` has not moved beyond version `1.0.0` yet.
