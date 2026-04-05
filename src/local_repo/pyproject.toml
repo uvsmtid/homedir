@@ -19,8 +19,8 @@ dependencies = [
     "pytest",
     "pre-commit",
     "dotbot",
-    "protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@26028d51440067b6f13233c3bdd97e5e81791da4#egg=protoprimer&subdirectory=src/protoprimer",
-    "neoprimer @ git+https://github.com/uvsmtid/protoprimer.git@26028d51440067b6f13233c3bdd97e5e81791da4#egg=neoprimer&subdirectory=src/neoprimer",
+    "protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@093d80f520382349228623762a800bd21ccc2e5e#egg=protoprimer&subdirectory=src/protoprimer",
+    "neoprimer @ git+https://github.com/uvsmtid/protoprimer.git@093d80f520382349228623762a800bd21ccc2e5e#egg=neoprimer&subdirectory=src/neoprimer",
 ]
 
 [tool.setuptools.packages.find]

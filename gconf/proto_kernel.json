@@ -1,0 +1,16 @@
+{
+    "local_conf_symlink_rel_path": "lconf",
+    "default_env_dir_rel_path": "dst/default_env",
+
+    "venv_driver": "venv_uv",
+
+    "local_venv_dir_rel_path": "venv",
+    "local_log_dir_rel_path": "log",
+    "local_tmp_dir_rel_path": "tmp",
+
+    "project_descriptors": [
+        {
+            "build_root_dir_rel_path": "src/local_repo"
+        }
+    ]
+}
