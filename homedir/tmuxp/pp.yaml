@@ -4,11 +4,11 @@ session_name: pp
 
 windows:
 
-    -   window_name: null
+    -   window_name: ""
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: bash
         start_directory: /home/uvsmtid
 
@@ -16,7 +16,7 @@ windows:
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid/repos/protoprimer.git
 
@@ -24,7 +24,7 @@ windows:
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid/repos/instant_python_bootstrap.git
 
@@ -39,7 +39,7 @@ windows:
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid/repos/protoprimer.git
 
@@ -47,7 +47,7 @@ windows:
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid/repos/protoprimer.git
 
@@ -55,7 +55,7 @@ windows:
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid/repos/protoprimer.git
 
@@ -63,7 +63,7 @@ windows:
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid/repos/protoprimer.git
 
@@ -71,12 +71,12 @@ windows:
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid
 
     -   window_name: homedir
-        focus: 'true'
+        focus: "true"
         options:
             automatic-rename: false
         panes:

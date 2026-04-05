@@ -4,11 +4,11 @@ session_name: bg
 
 windows:
 
-    -   window_name: null
+    -   window_name: ""
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid
 
@@ -16,15 +16,15 @@ windows:
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid
 
     -   window_name: pycharm
-        focus: 'true'
+        focus: "true"
         options:
             automatic-rename: false
         panes:
-            -   focus: 'true'
+            -   focus: "true"
                 shell_command: zsh
         start_directory: /home/uvsmtid/Apps/PyCharm
