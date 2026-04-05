@@ -19,6 +19,7 @@ dependencies = [
     "pytest",
     "pre-commit",
     "dotbot",
+    "tmuxp",
     "protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@093d80f520382349228623762a800bd21ccc2e5e#egg=protoprimer&subdirectory=src/protoprimer",
     "neoprimer @ git+https://github.com/uvsmtid/protoprimer.git@093d80f520382349228623762a800bd21ccc2e5e#egg=neoprimer&subdirectory=src/neoprimer",
 ]
