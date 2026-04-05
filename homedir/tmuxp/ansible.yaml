@@ -1,0 +1,29 @@
+
+session_name: ansible
+
+windows:
+
+    -   window_name: null
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: 'true'
+                shell_command: zsh
+        start_directory: /home/uvsmtid
+
+    -   window_name: ansible
+        focus: 'true'
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: 'true'
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/spectsys.ansible.git
+
+    -   window_name: homedir
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: 'true'
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/homedir.git
