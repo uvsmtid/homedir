@@ -1,7 +1,6 @@
-
 ---
 
-session_name: ansible
+session_name: bg
 
 windows:
 
@@ -13,19 +12,19 @@ windows:
                 shell_command: zsh
         start_directory: /home/uvsmtid
 
-    -   window_name: ansible
+    -   window_name: idea
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: 'true'
+                shell_command: zsh
+        start_directory: /home/uvsmtid
+
+    -   window_name: pycharm
         focus: 'true'
         options:
             automatic-rename: false
         panes:
             -   focus: 'true'
                 shell_command: zsh
-        start_directory: /home/uvsmtid/repos/spectsys.ansible.git
-
-    -   window_name: homedir
-        options:
-            automatic-rename: false
-        panes:
-            -   focus: 'true'
-                shell_command: zsh
-        start_directory: /home/uvsmtid/repos/homedir.git
+        start_directory: /home/uvsmtid/Apps/PyCharm
