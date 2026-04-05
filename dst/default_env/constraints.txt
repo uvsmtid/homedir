@@ -4,6 +4,7 @@ dotbot==1.24.1
 filelock==3.25.2
 identify==2.6.18
 iniconfig==2.3.0
+libtmux==0.55.0
 neoprimer @ git+https://github.com/uvsmtid/protoprimer.git@093d80f520382349228623762a800bd21ccc2e5e#subdirectory=src/neoprimer
 nodeenv==1.10.0
 packaging==26.0
@@ -15,4 +16,5 @@ pygments==2.20.0
 pytest==9.0.2
 python-discovery==1.2.1
 pyyaml==6.0.3
+tmuxp==1.67.0
 virtualenv==21.2.0

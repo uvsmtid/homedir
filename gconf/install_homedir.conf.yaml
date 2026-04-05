@@ -15,5 +15,6 @@
         ~/.bashrc: bashrc
         ~/.inputrc: inputrc
         ~/.p10k.zsh: p10k.zsh
+        ~/.tmuxp: tmuxp
 
 # EOF

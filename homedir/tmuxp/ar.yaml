@@ -1,0 +1,46 @@
+---
+
+session_name: ar
+
+windows:
+
+    -   window_name: ""
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid
+
+    -   window_name: ar-c
+        focus: "true"
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/argrelay.git
+
+    -   window_name: ar-s
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/argrelay.git
+
+    -   window_name: AI.1
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/argrelay.git
+
+    -   window_name: AI.2
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/argrelay.git

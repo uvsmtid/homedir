@@ -1,0 +1,84 @@
+---
+
+session_name: pp
+
+windows:
+
+    -   window_name: ""
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: bash
+        start_directory: /home/uvsmtid
+
+    -   window_name: pp
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/protoprimer.git
+
+    -   window_name: instant_python_boostrap
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/instant_python_bootstrap.git
+
+    -   window_name: AI.1
+        options:
+            automatic-rename: false
+        panes:
+            - pane
+        start_directory: /home/uvsmtid/repos/protoprimer.git
+
+    -   window_name: AI.2
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/protoprimer.git
+
+    -   window_name: integ_test
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/protoprimer.git
+
+    -   window_name: pp.min
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/protoprimer.git
+
+    -   window_name: pp.max
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/repos/protoprimer.git
+
+    -   window_name: pp
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid
+
+    -   window_name: homedir
+        focus: "true"
+        options:
+            automatic-rename: false
+        panes:
+            - pane
+        start_directory: /home/uvsmtid/repos/homedir.git

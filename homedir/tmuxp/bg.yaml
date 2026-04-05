@@ -1,0 +1,30 @@
+---
+
+session_name: bg
+
+windows:
+
+    -   window_name: ""
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid
+
+    -   window_name: idea
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid
+
+    -   window_name: pycharm
+        focus: "true"
+        options:
+            automatic-rename: false
+        panes:
+            -   focus: "true"
+                shell_command: zsh
+        start_directory: /home/uvsmtid/Apps/PyCharm
