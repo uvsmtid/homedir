@@ -50,7 +50,7 @@
 
     # "Long log" - one line commit with graph.
     # Useful for high level log overview long back in history.
-    llog = log --histogram --decorate=full --graph --pretty=oneline --abbrev-commit --format='%C(auto)%h%d %s %Cgreen%an %Cblue%ad'
+    llog = log --histogram --decorate=full --graph --pretty=oneline --abbrev-commit --format='%C(auto)%h %s %C(auto)%d %Cgreen%an %Cblue%ad'
 
     ll = llog --max-count=20
 
