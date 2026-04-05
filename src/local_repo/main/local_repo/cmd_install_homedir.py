@@ -7,8 +7,8 @@ import dotbot
 import logging
 
 from protoprimer.primer_kernel import (
-    ColorFormatter,
-    PythonExecutableFilter,
+    StderrLogFormatter,
+    StateStrideFilter,
 )
 
 logger = logging.getLogger()
@@ -23,9 +23,9 @@ def configure_stderr_logger(
     logger.setLevel(logging.NOTSET)
 
     stderr_handler: logging.Handler = logging.StreamHandler(sys.stderr)
-    stderr_handler.addFilter(PythonExecutableFilter())
+    stderr_handler.addFilter(StateStrideFilter())
 
-    stderr_formatter = ColorFormatter()
+    stderr_formatter = StderrLogFormatter(logging.INFO)
 
     stderr_handler.setLevel(stderr_log_level)
     stderr_handler.setFormatter(stderr_formatter)
@@ -65,3 +65,11 @@ def install_homedir(
     logger.info(f"sys.argv: {sys.argv}")
 
     dotbot.cli.main()
+
+
+def custom_main():
+    # From `cmd_install_homedir.py` to repo root `./../../../../`
+    ref_root_dir_abs_path = os.path.dirname(
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+    )
+    install_homedir(ref_root_dir_abs_path=ref_root_dir_abs_path)
