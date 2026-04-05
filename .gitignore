@@ -1,7 +1,4 @@
 
-# IDEA / PyCharm files:
-/.idea/
-
 # local config symlink used by `protoprimer`:
 /lconf
 
