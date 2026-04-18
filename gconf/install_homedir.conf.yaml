@@ -8,7 +8,11 @@
 -   clean:
         -   '~'
 
+-   create:
+        -   ~/.claude
+
 -   link:
+        ~/.claude/settings.json: claude/settings.json
         ~/.gitconfig: gitconfig
         ~/.zshrc: zshrc
         ~/.bash_profile: bash_profile
