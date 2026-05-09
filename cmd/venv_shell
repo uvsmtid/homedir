@@ -21,9 +21,4 @@ if __name__ == "__main__":
     sys.path.pop()
     # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    os.environ["PROTOPRIMER_DO_INSTALL"] = str(False)
-
-    proto_kernel.run_main(
-        "neoprimer.cmd_venv_shell",
-        "custom_main",
-    )
+    proto_kernel.app_starter("neoprimer.cmd_venv_shell:custom_main")
