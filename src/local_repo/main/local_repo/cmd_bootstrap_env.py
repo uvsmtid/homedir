@@ -1,43 +1,35 @@
 from __future__ import annotations
 
-import enum
 import logging
 
 from metaprimer.pre_commit import (
     Bootstrapper_state_pre_commit_configured,
 )
 from protoprimer.primer_kernel import (
-    EnvContext,
-    app_main,
+    ContextBuilder,
+    EntryFunc,
+    run_process,
 )
 
 logger = logging.getLogger()
 
 
 def custom_main():
-    app_main(customize_env_context)
-
-
-class CustomEnvState(enum.Enum):
-
-    state_pre_commit_configured = Bootstrapper_state_pre_commit_configured
-
-
-def customize_env_context():
-    """
-    See UC_10_80_27_57.extend_DAG.md
-    """
-
-    env_ctx = EnvContext()
-
-    env_ctx.state_graph.register_factory(
-        Bootstrapper_state_pre_commit_configured.state_pre_commit_configured,
-        Bootstrapper_state_pre_commit_configured(env_ctx),
+    env_ctx = (
+        ContextBuilder()
+        #
+        .entry_func(EntryFunc.func_boot_env)
+        #
+        .forced_final_state(Bootstrapper_state_pre_commit_configured._state_name())
+        #
+        .build_context()
     )
-
-    env_ctx.final_state = CustomEnvState.state_pre_commit_configured.name
-
-    return env_ctx
+    env_ctx.register_factory(
+        Bootstrapper_state_pre_commit_configured._state_name(),
+        Bootstrapper_state_pre_commit_configured,
+        replace_existing=True,
+    )
+    run_process(env_ctx)
 
 
 if __name__ == "__main__":
