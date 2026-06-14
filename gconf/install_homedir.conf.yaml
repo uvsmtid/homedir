@@ -21,7 +21,7 @@
         ~/.p10k.zsh: p10k.zsh
         ~/.tmux.conf: tmux.conf
         ~/.tmuxp: tmuxp
-        ~/.bashrc.d/1.argrelay.shell_env.bash: bashrc.d/1.argrelay.shell_env.bash
-        ~/.bashrc.d/9.sdkman.init.bash: bashrc.d/9.sdkman.init.bash
+        ~/.bashrc.d/1.argrelay.shell_env.sh: bashrc.d/1.argrelay.shell_env.sh
+        ~/.bashrc.d/9.sdkman.init.sh: bashrc.d/9.sdkman.init.sh
 
 # EOF
