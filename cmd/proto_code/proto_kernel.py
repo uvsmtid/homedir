@@ -872,9 +872,7 @@ class VenvDriverUv(VenvDriverBase):
                 required_python_version=self.required_python_version,
                 # TODO: assert python version suitable for `uv` (because this `venv` will be used to install `uv`).
                 # NOTE: Create this `venv` (to install `uv`) with whatever `python` runs now:
-                # Use sys.executable (the bootstrapping Python) rather than `self.selected_python_file_abs_path`
-                # because the selected Python may be externally-managed (e.g. by uv) and block ensurepip.
-                selected_python_file_abs_path=sys.executable,
+                selected_python_file_abs_path=self.selected_python_file_abs_path,
                 # Instead of `self.state_local_venv_dir_abs_path_inited`,
                 # this intermediate driver uses ` self.uv_venv_abs_path`:
                 state_local_venv_dir_abs_path_inited=self.uv_venv_abs_path,
