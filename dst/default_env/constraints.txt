@@ -1,20 +1,21 @@
 cfgv==3.5.0
-distlib==0.4.0
+distlib==0.4.3
 dotbot==1.24.1
-filelock==3.25.2
-identify==2.6.18
+filelock==3.29.4
+identify==2.6.19
 iniconfig==2.3.0
-libtmux==0.55.0
-neoprimer @ git+https://github.com/uvsmtid/protoprimer.git@093d80f520382349228623762a800bd21ccc2e5e#subdirectory=src/neoprimer
+libtmux==0.58.0
+metaprimer @ git+https://github.com/uvsmtid/protoprimer.git@24c627307735677ddab2f02795900362ea6b64fa#subdirectory=src/metaprimer
 nodeenv==1.10.0
-packaging==26.0
-platformdirs==4.9.4
+packaging==26.2
+pip==26.1.2
+platformdirs==4.10.0
 pluggy==1.6.0
-pre-commit==4.5.1
-protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@093d80f520382349228623762a800bd21ccc2e5e#subdirectory=src/protoprimer
+pre-commit==4.6.0
+protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@24c627307735677ddab2f02795900362ea6b64fa#subdirectory=src/protoprimer
 pygments==2.20.0
-pytest==9.0.2
-python-discovery==1.2.1
+pytest==9.1.0
+python-discovery==1.4.2
 pyyaml==6.0.3
-tmuxp==1.67.0
-virtualenv==21.2.0
+tmuxp==1.70.0
+virtualenv==21.5.0
