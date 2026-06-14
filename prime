@@ -23,6 +23,6 @@ if __name__ == "__main__":
     proto_spec.loader.exec_module(proto_kernel)
     # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    proto_kernel.env_bootstrapper(
+    proto_kernel.boot_env(
         "local_repo.cmd_bootstrap_env:custom_main",
     )
