@@ -5,14 +5,14 @@ filelock==3.29.4
 identify==2.6.19
 iniconfig==2.3.0
 libtmux==0.58.0
-metaprimer @ git+https://github.com/uvsmtid/protoprimer.git@24c627307735677ddab2f02795900362ea6b64fa#subdirectory=src/metaprimer
+metaprimer @ git+https://github.com/uvsmtid/protoprimer.git@c45a1ec47fee33ba3b431ced7ab2763eb152229c#subdirectory=src/metaprimer
 nodeenv==1.10.0
 packaging==26.2
 pip==26.1.2
 platformdirs==4.10.0
 pluggy==1.6.0
 pre-commit==4.6.0
-protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@24c627307735677ddab2f02795900362ea6b64fa#subdirectory=src/protoprimer
+protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@c45a1ec47fee33ba3b431ced7ab2763eb152229c#subdirectory=src/protoprimer
 pygments==2.20.0
 pytest==9.1.0
 python-discovery==1.4.2
