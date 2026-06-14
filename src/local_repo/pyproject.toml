@@ -20,8 +20,8 @@ dependencies = [
     "pre-commit",
     "dotbot",
     "tmuxp",
-    "protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@24c627307735677ddab2f02795900362ea6b64fa#egg=protoprimer&subdirectory=src/protoprimer",
-    "metaprimer @ git+https://github.com/uvsmtid/protoprimer.git@24c627307735677ddab2f02795900362ea6b64fa#egg=metaprimer&subdirectory=src/metaprimer",
+    "protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@c45a1ec47fee33ba3b431ced7ab2763eb152229c#egg=protoprimer&subdirectory=src/protoprimer",
+    "metaprimer @ git+https://github.com/uvsmtid/protoprimer.git@c45a1ec47fee33ba3b431ced7ab2763eb152229c#egg=metaprimer&subdirectory=src/metaprimer",
 ]
 
 [tool.setuptools.packages.find]
