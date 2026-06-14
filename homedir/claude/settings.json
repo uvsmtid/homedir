@@ -13,5 +13,6 @@
   "skipDangerousModePermissionPrompt": true,
   "enabledPlugins": {
     "caveman@caveman": true
-  }
+  },
+  "theme": "dark"
 }
