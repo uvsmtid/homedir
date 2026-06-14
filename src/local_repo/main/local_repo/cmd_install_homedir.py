@@ -7,7 +7,7 @@ import dotbot
 import logging
 
 from protoprimer.primer_kernel import (
-    StderrLogFormatter,
+    DefaultStderrLogFormatter,
     StateStrideFilter,
 )
 
@@ -25,7 +25,7 @@ def configure_stderr_logger(
     stderr_handler: logging.Handler = logging.StreamHandler(sys.stderr)
     stderr_handler.addFilter(StateStrideFilter())
 
-    stderr_formatter = StderrLogFormatter(logging.INFO)
+    stderr_formatter = DefaultStderrLogFormatter(logging.INFO)
 
     stderr_handler.setLevel(stderr_log_level)
     stderr_handler.setFormatter(stderr_formatter)
