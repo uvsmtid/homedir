@@ -21,4 +21,4 @@ if __name__ == "__main__":
     sys.path.pop()
     # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    proto_kernel.app_starter("local_repo.cmd_install_homedir:custom_main")
+    proto_kernel.start_app("local_repo.cmd_install_homedir:custom_main")
