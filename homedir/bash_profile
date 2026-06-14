@@ -1,6 +1,9 @@
+# NOTE: uvsmtid: Except this comment, this is the default `~/.bash_profile` from `fedora` 44.
 # .bash_profile
 
-# Get the aliases and functions:
+# Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+    . ~/.bashrc
 fi
+
+# User specific environment and startup programs
