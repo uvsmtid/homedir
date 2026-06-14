@@ -1,26 +1,26 @@
+# NOTE: uvsmtid: Except this comment, this is the default `~/.bashrc` from `fedora` 44.
 # .bashrc
 
-# Source global definitions:
+# Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
-# User specific environment:
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
 # User specific aliases and functions
-
-# Test `argrelay` config:
-cd /home/uvsmtid/repos/argrelay.git/
-source /home/uvsmtid/repos/argrelay.git/exe/shell_env.bash
-cd - 1> /dev/null
-
-source ~/repos/argrelay.git/exe/shell_env.bash
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
