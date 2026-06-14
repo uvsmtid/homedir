@@ -21,5 +21,6 @@
         ~/.p10k.zsh: p10k.zsh
         ~/.tmux.conf: tmux.conf
         ~/.tmuxp: tmuxp
+        ~/.bashrc.d/1.argrelay.shell_env.bash: bashrc.d/1.argrelay.shell_env.bash
 
 # EOF
