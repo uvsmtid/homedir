@@ -4,7 +4,7 @@ dotbot==1.24.1
 filelock==3.29.4
 identify==2.6.19
 iniconfig==2.3.0
-libtmux==0.58.0
+libtmux==0.58.1
 metaprimer @ git+https://github.com/uvsmtid/protoprimer.git@5bc0fbe7799509a6af1a28e7fb1dc46f3e284447#subdirectory=src/metaprimer
 nodeenv==1.10.0
 packaging==26.2
@@ -14,8 +14,8 @@ pluggy==1.6.0
 pre-commit==4.6.0
 protoprimer @ git+https://github.com/uvsmtid/protoprimer.git@5bc0fbe7799509a6af1a28e7fb1dc46f3e284447#subdirectory=src/protoprimer
 pygments==2.20.0
-pytest==9.1.0
+pytest==9.1.1
 python-discovery==1.4.2
 pyyaml==6.0.3
-tmuxp==1.70.0
-virtualenv==21.5.0
+tmuxp==1.70.1
+virtualenv==21.5.1
