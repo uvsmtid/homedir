@@ -10,3 +10,6 @@ fi
 
 # Added by Antigravity CLI installer:
 export PATH="/home/uvsmtid/.local/bin:$PATH"
+
+# Added by `rustup`:
+. "$HOME/.cargo/env"
