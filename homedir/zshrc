@@ -143,3 +143,6 @@ llll () {
 }
 
 source <(fzf --zsh)
+
+# Added by Antigravity CLI installer:
+export PATH="/home/uvsmtid/.local/bin:$PATH"
