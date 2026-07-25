@@ -1,6 +1,10 @@
 {
   "env": {
-    "CAVEMAN_DEFAULT_MODE": "ultra"
+    "CAVEMAN_DEFAULT_MODE": "ultra",
+    "CLAUDE_CODE_DISABLE_MOUSE": "1"
+  },
+  "enabledPlugins": {
+    "caveman@caveman": true
   },
   "extraKnownMarketplaces": {
     "caveman": {
@@ -10,9 +14,8 @@
       }
     }
   },
+  "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
-  "enabledPlugins": {
-    "caveman@caveman": true
-  },
-  "theme": "dark"
+  "theme": "dark",
+  "effortLevel": "high"
 }
