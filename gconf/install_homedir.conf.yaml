@@ -19,6 +19,7 @@
         ~/.bashrc: bashrc
         ~/.inputrc: inputrc
         ~/.p10k.zsh: p10k.zsh
+        ~/.config/starship.toml: starship.toml
         ~/.tmux.conf: tmux.conf
         ~/.tmuxp: tmuxp
         ~/.bashrc.d/1.argrelay.shell_env.sh: bashrc.d/1.argrelay.shell_env.sh

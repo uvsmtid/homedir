@@ -1,0 +1,8 @@
+[git_branch]
+symbol = ""
+
+[gradle]
+symbol = "gradle "
+
+[kotlin]
+symbol = "kt "
