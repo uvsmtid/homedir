@@ -1,6 +1,21 @@
 
 export PATH="$HOME/.local/bin:$HOME/.fzf/bin:${PATH}"
 
+# Shared history across concurrent sessions.
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000000
+SAVEHIST=10000000
+# write+import history incrementally, share across sessions
+setopt SHARE_HISTORY
+# append each cmd right away, not just at shell exit
+setopt INC_APPEND_HISTORY
+# skip dup of immediately previous cmd
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+# save timestamps
+setopt EXTENDED_HISTORY
+
 autoload -Uz compinit
 compinit
 
