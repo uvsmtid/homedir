@@ -17,5 +17,10 @@
   "tui": "default",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark",
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
   "effortLevel": "high"
 }
