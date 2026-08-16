@@ -22,5 +22,6 @@
     "pr": "",
     "sessionUrl": false
   },
-  "effortLevel": "high"
+  "effortLevel": "high",
+  "model": "sonnet"
 }
