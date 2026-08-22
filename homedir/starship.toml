@@ -1,8 +1,24 @@
 [status]
 style = "bold red"
-symbol = "✗"
+symbol = "x"
 format = "[$symbol $status]($style) "
 disabled = false
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+
+[git_status]
+ahead = "^"
+behind = "v"
+diverged = "^v"
+conflicted = "="
+deleted = "x"
+renamed = "r"
+modified = "!"
+staged = "+"
+stashed = "$"
+untracked = "?"
 
 [directory]
 truncation_length = 0
