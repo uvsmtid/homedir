@@ -1,3 +1,9 @@
+[status]
+style = "bold red"
+symbol = "✗"
+format = "[$symbol $status]($style) "
+disabled = false
+
 [directory]
 truncation_length = 0
 truncate_to_repo = false
