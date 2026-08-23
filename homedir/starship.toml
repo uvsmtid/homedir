@@ -17,7 +17,7 @@ deleted = "x"
 renamed = "r"
 modified = "!"
 staged = "+"
-stashed = "$"
+stashed = '\$'
 untracked = "?"
 
 [directory]
