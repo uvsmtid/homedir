@@ -32,3 +32,9 @@ symbol = "gradle "
 
 [kotlin]
 symbol = "kt "
+
+[python]
+symbol = "py "
+
+[java]
+symbol = "java "
