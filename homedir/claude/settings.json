@@ -4,7 +4,7 @@
     "CLAUDE_CODE_DISABLE_MOUSE": "1"
   },
   "enabledPlugins": {
-    "caveman@caveman": true
+    "caveman@caveman": false
   },
   "extraKnownMarketplaces": {
     "caveman": {
