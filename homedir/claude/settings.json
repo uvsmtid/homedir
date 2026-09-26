@@ -3,6 +3,12 @@
     "CAVEMAN_DEFAULT_MODE": "ultra",
     "CLAUDE_CODE_DISABLE_MOUSE": "1"
   },
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "model": "sonnet",
   "enabledPlugins": {
     "caveman@caveman": false
   },
@@ -14,14 +20,8 @@
       }
     }
   },
+  "effortLevel": "high",
   "tui": "default",
   "skipDangerousModePermissionPrompt": true,
-  "theme": "dark",
-  "attribution": {
-    "commit": "",
-    "pr": "",
-    "sessionUrl": false
-  },
-  "effortLevel": "high",
-  "model": "sonnet"
+  "theme": "dark"
 }
